@@ -1,0 +1,155 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: lightseagreen;
+  font-family: cursive;
+  font-size: 20px;
+}
+.modal {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border-radius: 8px;
+}
+.modal .user {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  width: 50%;
+  min-height: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.user input {
+  width: 90%;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 2px 3px lightseagreen;
+}
+.user button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 50%;
+  background-color: lightseagreen;
+  box-shadow: 3px 3px black;
+  transition: all 0.5s;
+}
+.user button:hover {
+  background-color: rgb(31, 151, 145);
+  box-shadow: 3px 4px black;
+  cursor: pointer;
+}
+
+.modal div.info {
+  display: none;
+  padding: 10px;
+  min-width: 50%;
+  min-height: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-direction: column;
+}
+div.info button {
+  background-color: lightseagreen;
+  border: none;
+  box-shadow: 3px 3px black;
+  width: 20%;
+  padding: 5px;
+  transition: 0.5s;
+}
+div.info button:hover {
+  cursor: pointer;
+  background-color: rgb(31, 151, 145);
+  box-shadow: 3px 4px black;
+}
+.wrapper {
+  display: none;
+  flex-direction: column;
+  min-width: 30%;
+  height: 50%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  transition: opacity ease-in-out 0.5s;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: lightseagreen;
+  border-radius: 3px;
+}
+p.time {
+  margin: 2px;
+  border-radius: 4px;
+  text-align: center;
+  width: 20%;
+  background-color: white;
+}
+.quest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 20px;
+}
+.answer {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+}
+.answer input {
+  width: 20px;
+  height: 20px;
+}
+input:hover {
+  cursor: pointer;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.action button {
+  font-weight: 800;
+  width: 20%;
+  padding: 5px;
+  border: none;
+  background-color: lightseagreen;
+  box-shadow: 3px 3px black;
+  transition: all 0.5s;
+}
+.action button:hover {
+  background-color: rgb(31, 151, 145);
+  box-shadow: 3px 4px black;
+  cursor: pointer;
+}

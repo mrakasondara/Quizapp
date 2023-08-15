@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal">
+        <div class="user">
+          <span>Username</span>
+          <input type="text" placeholder="Add Username" id="username" />
+          <button onclick="start()">Start</button>
+        </div>
+        <div class="info">
+          <p class="info"></p>
+          <p class="scor"></p>
+          <button onclick="refresh()">Reset</button>
+        </div>
+      </div>
+      <div class="wrapper" id="wrapper">
+        <div class="header">
+          <p>Quiz App</p>
+          <p class="time">10s</p>
+        </div>
+        <div class="quest">
+          <label for="" class="question"></label>
+          <div class="answer">
+            <input type="radio" name="answer" id="a" />
+            <span class="answerA"></span>
+          </div>
+          <div class="answer">
+            <input type="radio" name="answer" id="b" />
+            <span class="answerB"></span>
+          </div>
+          <div class="answer">
+            <input type="radio" name="answer" id="c" />
+            <span class="answerC"></span>
+          </div>
+          <div class="answer">
+            <input type="radio" name="answer" id="d" />
+            <span class="answerD"></span>
+          </div>
+        </div>
+        <div class="action">
+          <p class="page">1/5</p>
+          <button onclick="nextQuest()">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
